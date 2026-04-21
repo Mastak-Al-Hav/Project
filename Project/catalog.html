@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Origin's finest selection of specialty coffees, craft syrups, and premium teas. Hand-picked for the ultimate tasting experience.">
+    
+    <meta property="og:title" content="The Collection | Origin">
+    <meta property="og:description" content="Explore Origin's finest selection of specialty coffees, craft syrups, and premium teas.">
+    <meta property="og:type" content="website">
+    
+    <title>The Collection | Origin</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body class="catalog-page">
+
+    <a href="#main-content" class="sr-only focusable">Skip to main content</a>
+
+    <header class="site-header container">
+        <a href="/" class="logo" aria-label="Origin Home">
+            Origin <img src="img/logo-icon.svg" alt="" aria-hidden="true">
+        </a>
+        
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#catalog" aria-current="page" class="active">Catalog</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+        
+        <section class="header-actions" aria-label="User actions">
+            <button aria-label="Open Cart"><img src="img/icon-bag.svg" alt=""></button>
+            <button aria-label="User Profile"><div class="icon-user-circle"></div></button>
+        </section>
+    </header>
+
+    <main id="main-content">
+        
+        <section class="catalog-hero" aria-labelledby="catalog-title">
+            <div class="container">
+                <h1 id="catalog-title">The Collection</h1>
+                <p class="subtitle">Explore our finest selection...</p>
+                <div class="decorative-circle-hero" aria-hidden="true"></div>
+            </div>
+        </section>
+
+        <section class="catalog-controls container" aria-label="Catalog controls">
+            
+            <form class="search-bar" role="search" action="/search" method="GET">
+                <label for="site-search">Search:</label>
+                <input type="search" id="site-search" name="q" placeholder="Search products...">
+            </form>
+            
+            <div class="filters-row">
+                <div class="filter-group">
+                    <span id="product-type-label">Type of product:</span>
+                    <nav aria-labelledby="product-type-label" class="btn-group">
+                        <button aria-current="page" class="active">Specialty Coffee</button>
+                        <button>Craft Syrups</button>
+                        <button>Premium Tea</button>
+                    </nav>
+                </div>
+                
+                <div class="sort-group">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select" name="sort">
+                        <option value="popular">Popularity</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-grid-section container" aria-label="Products">
+            <ul class="products-grid large">
+                
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <picture>
+                                <source srcset="img/brazil-santos.avif" type="image/avif">
+                                <source srcset="img/brazil-santos.webp" type="image/webp">
+                                <img itemprop="image" src="img/brazil-santos.png" alt="Brazil Santos Coffee" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Santos</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Caramel</li><li>Hazelnut</li><li>Cocoa beans</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="18.99" class="price">18.99$</data>
+                                <button aria-label="Add Brazil Santos to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <picture>
+                                <source srcset="img/ethiopia-yirgacheffe.avif" type="image/avif">
+                                <source srcset="img/ethiopia-yirgacheffe.webp" type="image/webp">
+                                <img itemprop="image" src="img/ethiopia-yirgacheffe.png" alt="Ethiopia Yirgacheffe Coffee" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Ethiopia Yirgacheffe</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Floral</li><li>Citrus</li><li>Tea leaves</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="19.99" class="price">19.99$</data>
+                                <button aria-label="Add Ethiopia Yirgacheffe to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <picture>
+                                <source srcset="img/guatemala-antigua.avif" type="image/avif">
+                                <source srcset="img/guatemala-antigua.webp" type="image/webp">
+                                <img itemprop="image" src="img/guatemala-antigua.png" alt="Guatemala Antigua Coffee" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Guatemala Antigua</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Smoke</li><li>Spice</li><li>Dark chocolate</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Guatemala Antigua to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <picture>
+                                <source srcset="img/brazil-mogiana.avif" type="image/avif">
+                                <source srcset="img/brazil-mogiana.webp" type="image/webp">
+                                <img itemprop="image" src="img/brazil-mogiana.png" alt="Brazil Mogiana Coffee" loading="lazy">
+                            </picture>
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Mogiana</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Almonds</li><li>Dried apricots</li><li>Cane sugar</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Brazil Mogiana to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-santos.png" alt="Brazil Santos Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Santos</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Caramel</li><li>Hazelnut</li><li>Cocoa beans</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="18.99" class="price">18.99$</data>
+                                <button aria-label="Add Brazil Santos to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/ethiopia-yirgacheffe.png" alt="Ethiopia Yirgacheffe Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Ethiopia Yirgacheffe</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Floral</li><li>Citrus</li><li>Tea leaves</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="19.99" class="price">19.99$</data>
+                                <button aria-label="Add Ethiopia Yirgacheffe to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/guatemala-antigua.png" alt="Guatemala Antigua Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Guatemala Antigua</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Smoke</li><li>Spice</li><li>Dark chocolate</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Guatemala Antigua to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-mogiana.png" alt="Brazil Mogiana Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Mogiana</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Almonds</li><li>Dried apricots</li><li>Cane sugar</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Brazil Mogiana to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-santos.png" alt="Brazil Santos Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Santos</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Caramel</li><li>Hazelnut</li><li>Cocoa beans</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="18.99" class="price">18.99$</data>
+                                <button aria-label="Add Brazil Santos to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/ethiopia-yirgacheffe.png" alt="Ethiopia Yirgacheffe Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Ethiopia Yirgacheffe</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Floral</li><li>Citrus</li><li>Tea leaves</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="19.99" class="price">19.99$</data>
+                                <button aria-label="Add Ethiopia Yirgacheffe to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/guatemala-antigua.png" alt="Guatemala Antigua Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Guatemala Antigua</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Smoke</li><li>Spice</li><li>Dark chocolate</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Guatemala Antigua to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-mogiana.png" alt="Brazil Mogiana Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Mogiana</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Almonds</li><li>Dried apricots</li><li>Cane sugar</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Brazil Mogiana to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-santos.png" alt="Brazil Santos Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Santos</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Caramel</li><li>Hazelnut</li><li>Cocoa beans</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="18.99" class="price">18.99$</data>
+                                <button aria-label="Add Brazil Santos to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/ethiopia-yirgacheffe.png" alt="Ethiopia Yirgacheffe Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Ethiopia Yirgacheffe</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Floral</li><li>Citrus</li><li>Tea leaves</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="19.99" class="price">19.99$</data>
+                                <button aria-label="Add Ethiopia Yirgacheffe to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/guatemala-antigua.png" alt="Guatemala Antigua Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Guatemala Antigua</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Smoke</li><li>Spice</li><li>Dark chocolate</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Guatemala Antigua to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                        <figure>
+                            <img itemprop="image" src="img/brazil-mogiana.png" alt="Brazil Mogiana Coffee" loading="lazy">
+                        </figure>
+                        <div class="product-details">
+                            <h2 itemprop="name">Brazil Mogiana</h2>
+                            <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                                <li>Almonds</li><li>Dried apricots</li><li>Cane sugar</li>
+                            </ul>
+                            <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="USD" />
+                                <link itemprop="availability" href="https://schema.org/InStock" />
+                                <data itemprop="price" value="17.99" class="price">17.99$</data>
+                                <button aria-label="Add Brazil Mogiana to cart"><img src="img/icon-cart.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+
+            </ul>
+            
+            <nav class="pagination" aria-label="Catalog pages">
+                <ul class="pagination-list">
+                    <li><a href="/catalog?page=1" aria-current="page" class="active" aria-label="Page 1">1</a></li>
+                    <li><a href="/catalog?page=2" aria-label="Page 2">2</a></li>
+                    <li><a href="/catalog?page=3" aria-label="Page 3">3</a></li>
+                    <li><a href="/catalog?page=4" aria-label="Page 4">4</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="section-consultation container" aria-labelledby="form-title">
+            <div class="form-wrapper">
+                <header>
+                    <h2 id="form-title">Get product consultation</h2>
+                    <p>Leave a short request and we’ll curate a lot that fits your taste and ritual format.</p>
+                </header>
+                
+                <form action="/submit-request" method="POST" class="consultation-form">
+                    <fieldset class="form-inputs-left">
+                        <legend class="sr-only">Contact Details</legend>
+                        <p class="input-row">
+                            <label for="userName">Name:</label>
+                            <input type="text" id="userName" name="userName" required autocomplete="name">
+                        </p>
+                        <p class="input-row">
+                            <label for="userPhone">Phone:</label>
+                            <input type="tel" id="userPhone" name="userPhone" required autocomplete="tel">
+                        </p>
+                        <p class="input-row">
+                            <label for="userOrg">Organization:</label>
+                            <input type="text" id="userOrg" name="userOrg" autocomplete="organization">
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset class="form-inputs-right">
+                        <legend class="sr-only">Request Details</legend>
+                        <p class="textarea-box">
+                            <label for="userTopic">Topic:</label>
+                            <textarea id="userTopic" name="userTopic" rows="6" required></textarea>
+                        </p>
+                    </fieldset>
+                    
+                    <footer class="form-footer">
+                        <p class="checkbox-wrapper">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">I agree to be contacted for consultation.</label>
+                        </p>
+                        <button type="submit" class="btn-outline">SEND REQUEST</button>
+                    </footer>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid container">
+            <section class="brand">
+                <h2>Origin</h2>
+                <p>Curated coffees, rare teas and crafted experiences...</p>
+                <small class="copyright">&copy; 2026 ORIGIN. All rights reserved.</small>
+            </section>
+            
+            <section class="team" aria-labelledby="team-title">
+                <h3 id="team-title">Development team:</h3>
+                <ul>
+                    <li>Gavrylenko Oleksiy</li>
+                    <li>Gromov Andriy</li>
+                    <li>Seniv Kateryna</li>
+                </ul>
+            </section>
+            
+            <section class="support" aria-labelledby="support-title">
+                <h3 id="support-title">Support & Info</h3>
+                <address>
+                    <p>Ivano-Frankivsk, Ukraine</p>
+                    <p><a href="tel:+380000000000">+380 (XX) XXX XX XX</a></p>
+                </address>
+                <a href="#privacy">Privacy policy</a>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>

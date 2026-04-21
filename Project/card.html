@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil Santos | Origin</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body class="modal-page">
+
+    <main class="modal-wrapper">
+        
+        <article class="detail-card" itemscope itemtype="https://schema.org/Product">
+            
+            <nav class="card-nav" aria-label="Product navigation">
+                <button class="btn-back" aria-label="Go back">
+                    <img src="img/icon-back.svg" alt="" aria-hidden="true">
+                </button>
+            </nav>
+
+            <div class="card-top-split">
+                
+                <figure class="product-visual">
+                    <picture>
+                        <source srcset="img/brazil-santos-large.avif" type="image/avif">
+                        <source srcset="img/brazil-santos-large.webp" type="image/webp">
+                        <img itemprop="image" src="img/brazil-santos-large.jpg" alt="Coffee bag Brazil Santos" fetchpriority="high">
+                    </picture>
+                </figure>
+
+                <section class="product-info">
+                    <h1 itemprop="name">Brazil Santos</h1>
+                    
+                    <p class="price-range" itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
+                        <meta itemprop="priceCurrency" content="UAH">
+                        <meta itemprop="lowPrice" content="5.99">
+                        <meta itemprop="highPrice" content="18.99">
+                        5.99₴ - 18.99₴
+                    </p>
+
+                    <ul class="tasting-notes" aria-label="Tasting notes">
+                        <li>Caramel</li>
+                        <li>Hazelnut</li>
+                        <li>Cocoa beans</li>
+                    </ul>
+
+                    <form action="/cart/add" method="POST" class="purchase-form">
+                        
+                        <fieldset class="packaging-options">
+                            <legend>Packaging:</legend>
+                            <div class="radio-group">
+                                <input type="radio" id="pack-250" name="packaging" value="250" checked class="sr-only">
+                                <label for="pack-250" class="btn-radio">250 gr</label>
+                                
+                                <input type="radio" id="pack-1kg" name="packaging" value="1000" class="sr-only">
+                                <label for="pack-1kg" class="btn-radio">1 kg</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="quantity-actions">
+                            <label for="qty">Quantity:</label>
+                            <input type="number" id="qty" name="quantity" min="1" value="1" class="qty-input">
+                            
+                            <button type="submit" class="btn-add-to-cart" aria-label="Add to cart">
+                                <img src="img/icon-bag.svg" alt="" aria-hidden="true">
+                            </button>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+
+            <section class="product-description">
+                <h2>Description:</h2>
+                <p itemprop="description">
+                    Hailing from the renowned port of Santos, this 100% Arabica is a global favorite for its flawless balance and smooth character. Cultivated at altitudes of 850–1,600m and processed naturally under the Brazilian sun, the beans develop a deep, nutty sweetness with distinct notes of toasted hazelnut and creamy caramel. Thanks to its low acidity and delicate body, Brazil Santos is the perfect choice for a daily ritual, offering a consistent and mellow cup whether brewed as a bold espresso or a gentle filter coffee. A true classic that brings the soul of Brazilian coffee culture to your home.
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+</body>
+</html>

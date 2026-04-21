@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Sign in | Origin</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body class="auth-page">
+
+    <main class="auth-wrapper">
+        <section class="auth-card" aria-labelledby="form-title">
+            
+            <div class="auth-content">
+                <h1 id="form-title">Sign in</h1>
+                
+                <form action="/login" method="POST" class="auth-form">
+                    
+                    <p class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </p>
+
+                    <p class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                    </p>
+
+                    <p class="input-group">
+                        <label for="position">Position</label>
+                        <input type="text" id="position" name="position" autocomplete="organization-title">
+                    </p>
+
+                    <footer class="form-actions">
+                        <button type="submit" class="btn-submit">Sign in</button>
+                    </footer>
+                </form>
+            </div>
+
+            <aside class="auth-visual">
+                <picture>
+                    <source srcset="img/coffee-tray.avif" type="image/avif">
+                    <source srcset="img/coffee-tray.webp" type="image/webp">
+                    <img src="img/coffee-tray.jpg" alt="Person holding a tray with various coffee drinks" fetchpriority="high">
+                </picture>
+            </aside>
+
+        </section>
+    </main>
+
+</body>
+</html>

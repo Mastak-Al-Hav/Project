@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"> <title>My Profile | Origin</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body class="profile-page">
+
+    <header class="site-header container">
+        <a href="/" class="logo" aria-label="Origin Home">
+            Origin <img src="img/logo-icon.svg" alt="" aria-hidden="true">
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+        <section class="header-actions" aria-label="User actions">
+            <button aria-label="Open Cart"><img src="img/icon-bag.svg" alt=""></button>
+            <button aria-label="User Profile" aria-current="page"><div class="icon-user-circle"></div></button>
+        </section>
+    </header>
+
+    <main class="container" id="main-content">
+        
+        <header class="page-header">
+            <h1>My Profile</h1>
+        </header>
+
+        <div class="profile-dashboard">
+            
+            <aside class="profile-sidebar">
+                
+                <section class="avatar-section" aria-label="User Avatar">
+                    <div class="avatar-wrapper">
+                        <img src="img/default-avatar.png" alt="Your profile photo" id="avatar-preview">
+                    </div>
+                    
+                    <form action="/upload-avatar" method="POST" enctype="multipart/form-data" class="avatar-upload-form">
+                        <input type="file" id="avatar-upload" name="avatar" accept="image/*" class="sr-only">
+                        <label for="avatar-upload" class="btn-outline">Change photo</label>
+                    </form>
+                </section>
+
+                <section class="bonus-section" aria-labelledby="bonus-title">
+                    <h2 id="bonus-title">Bonus system</h2>
+                    
+                    <dl class="bonus-details">
+                        <div class="dl-row">
+                            <dt>Member #</dt>
+                            <dd>32543276</dd>
+                        </div>
+                        <div class="dl-row">
+                            <dt>Points Balance:</dt>
+                            <dd>450</dd>
+                        </div>
+                        <div class="dl-row">
+                            <dt>Status:</dt>
+                            <dd>Gold Member</dd>
+                        </div>
+                    </dl>
+                    
+                    <p class="promo-text">Enjoy 10% off on all accessories.</p>
+                </section>
+
+            </aside>
+
+            <section class="profile-content" aria-label="Profile Details">
+                
+                <form action="/update-profile" method="POST" class="profile-form">
+                    
+                    <fieldset class="info-fieldset">
+                        <legend>Personal information</legend>
+                        <div class="form-grid-2col">
+                            <p class="input-group">
+                                <label for="fullName">Full name</label>
+                                <input type="text" id="fullName" name="fullName" value="John Doe" readonly autocomplete="name">
+                            </p>
+                            <p class="input-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" value="+380991234567" readonly autocomplete="tel">
+                            </p>
+                            <p class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" value="john.doe@example.com" readonly autocomplete="email">
+                            </p>
+                            <p class="input-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" value="Kyiv" readonly autocomplete="address-level2">
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="info-fieldset">
+                        <legend>Delivery info</legend>
+                        <div class="form-grid-2col">
+                            <p class="input-group">
+                                <label for="recipientName">Recipient Name</label>
+                                <input type="text" id="recipientName" name="recipientName" value="John Doe" readonly>
+                            </p>
+                            <p class="input-group">
+                                <label for="deliveryCity">City</label>
+                                <input type="text" id="deliveryCity" name="deliveryCity" value="Kyiv" readonly>
+                            </p>
+                            <p class="input-group">
+                                <label for="method">Preferred Method</label>
+                                <input type="text" id="method" name="method" value="Nova Poshta" readonly>
+                            </p>
+                            <p class="input-group">
+                                <label for="branch">Nova Poshta branch</label>
+                                <input type="text" id="branch" name="branch" value="Branch #42" readonly>
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <footer class="form-actions">
+                        <button type="button" class="btn-outline" id="edit-btn">Edit</button>
+                        <button type="submit" class="btn-outline">Save</button>
+                    </footer>
+
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        </footer>
+
+</body>
+</html>

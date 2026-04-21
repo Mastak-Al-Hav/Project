@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Registration | Origin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+    <main class="auth-wrapper">
+        
+        <section class="auth-card" aria-labelledby="form-title">
+            
+            <div class="auth-content">
+                <h1 id="form-title">Registration</h1>
+                
+                <form action="/register" method="POST" class="auth-form">
+                    
+                    <p class="input-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required autocomplete="name">
+                    </p>
+
+                    <p class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    </p>
+
+                    <p class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </p>
+
+                    <p class="input-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required autocomplete="address-level2">
+                    </p>
+
+                    <div class="input-row split">
+                        <p class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required autocomplete="new-password">
+                        </p>
+                        
+                        <p class="input-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+                        </p>
+                    </div>
+
+                    <footer class="form-actions">
+                        <p class="login-link">
+                            Already have an account? <a href="/login">Sign in</a>
+                        </p>
+                        <button type="submit" class="btn-submit">Sign up</button>
+                    </footer>
+                </form>
+            </div>
+
+            <aside class="auth-visual">
+                <picture>
+                    <source srcset="img/latte-art.avif" type="image/avif">
+                    <source srcset="img/latte-art.webp" type="image/webp">
+                    <img src="img/latte-art.jpg" alt="Barista pouring latte art into a cup" fetchpriority="high">
+                </picture>
+            </aside>
+
+        </section>
+    </main>
+
+</body>
+</html>

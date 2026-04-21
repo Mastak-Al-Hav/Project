@@ -1,0 +1,152 @@
+/* =========================================
+   1. БАЗОВЕ СКИДАННЯ
+========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   2. ФУНДАМЕНТ СТОРІНКИ (Темна зона)
+========================================= */
+.auth-page {
+    min-height: 100vh;
+    background-color: #191A1C; /* Колір фону з твого макету */
+}
+
+.auth-wrapper {
+    display: grid;
+    place-items: center; 
+    min-height: 100vh;
+    padding: 20px; 
+    
+    outline: 4px dashed #757575; /* Візуальна межа враппера */
+}
+
+/* =========================================
+   3. ГОЛОВНА КАРТКА (Біла зона)
+========================================= */
+.auth-card {
+    display: grid;
+    /* На макеті ліва частина (525px) ширша за праву (400px). 
+       Пропорція 1.3 до 1 ідеально це відтворює. */
+    grid-template-columns: 1.3fr 1fr; 
+    
+    width: 100%;
+    max-width: 925px; /* Точна ширина з макету */
+    min-height: 600px;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    outline: 4px solid #ffffff; 
+    border-radius: 15px; /* Заокруглення з макету */
+    overflow: hidden;
+}
+
+/* =========================================
+   4. ЛІВА ЧАСТИНА: ЗОНА ФОРМИ (Зелена зона)
+========================================= */
+.auth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 60px 80px; /* Збільшені відступи по боках порівняно з реєстрацією */
+    
+    background-color: rgba(0, 255, 0, 0.1);
+    outline: 3px solid #388e3c;
+}
+
+h1 {
+    margin-bottom: 40px; 
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Трохи більша відстань між полями, бо їх всього три */
+    
+    background-color: rgba(0, 255, 0, 0.2);
+    padding: 10px; 
+}
+
+/* =========================================
+   5. ЕЛЕМЕНТИ ФОРМИ (Жовта зона)
+========================================= */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    
+    background-color: rgba(255, 235, 59, 0.3); 
+    outline: 1px dashed #fbc02d;
+    padding: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px; 
+    border: 1px solid #000; 
+    border-radius: 8px; /* Заокруглення інпутів з макету */
+}
+
+/* =========================================
+   6. ПІДВАЛ ФОРМИ: ДІЇ (Фіолетова зона)
+========================================= */
+.form-actions {
+    display: flex;
+    /* Ключовий момент: притискаємо кнопку до правого краю */
+    justify-content: flex-end; 
+    margin-top: 10px; 
+    
+    background-color: rgba(156, 39, 176, 0.2); 
+    outline: 2px solid #8e24aa;
+    padding: 10px;
+}
+
+.btn-submit {
+    padding: 10px 24px;
+    display: block;
+    border: 1px solid #A24E06; /* Колір рамки кнопки з макету */
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* =========================================
+   7. ПРАВА ЧАСТИНА: ВІЗУАЛ (Синя зона)
+========================================= */
+.auth-visual {
+    width: 100%;
+    height: 100%; 
+    
+    background-color: rgba(33, 150, 243, 0.2); 
+    outline: 3px solid #1976d2;
+}
+
+.auth-visual picture, 
+.auth-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.5; /* Напівпрозорість для видимості каркасу */
+}
+
+/* =========================================
+   8. АДАПТИВНІСТЬ (Мобільні екрани)
+========================================= */
+@media (max-width: 768px) {
+    .auth-card {
+        grid-template-columns: 1fr; /* Перехід в 1 колонку */
+        max-width: 500px;
+    }
+    
+    .auth-visual {
+        display: none; /* Ховаємо картинку на телефонах */
+    }
+    
+    .auth-content {
+        padding: 40px 30px; 
+    }
+}

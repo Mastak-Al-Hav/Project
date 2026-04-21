@@ -1,0 +1,177 @@
+/* =========================================
+   1. БАЗОВЕ СКИДАННЯ
+========================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style: none; }
+.container { max-width: 1350px; margin: 0 auto; padding: 40px 20px; }
+
+/* =========================================
+   2. HERO (Заголовок з колом)
+========================================= */
+.catalog-hero {
+    background-color: rgba(255, 165, 0, 0.1); /* Світло-оранжевий */
+    outline: 2px dashed orange;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.decorative-circle-hero {
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(162, 78, 6, 0.4);
+    border-radius: 50%;
+    z-index: -1; /* Ховаємо під текст */
+}
+
+/* =========================================
+   3. КЕРУВАННЯ (Пошук і Фільтри)
+========================================= */
+.catalog-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Відстань між пошуком і фільтрами */
+    
+    background-color: rgba(0, 0, 255, 0.05); /* Світло-синій */
+    outline: 2px solid blue;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1; /* Рядок пошуку розтягується на весь вільний простір */
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #F0EEEE;
+}
+
+.filters-row {
+    display: flex;
+    justify-content: space-between; /* Розкидає Тип (зліва) і Сортування (справа) */
+    align-items: center;
+}
+
+.filter-group, .sort-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-group button {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/* =========================================
+   4. СІТКА ТОВАРІВ (16 карток)
+========================================= */
+.catalog-grid-section {
+    background-color: rgba(0, 255, 0, 0.05); /* Світло-зелений */
+    outline: 2px solid green;
+}
+
+.products-grid.large {
+    /* Головна магія Grid для каталогу. 
+       minmax(280px, 1fr) робить картки адаптивними:
+       на комп'ютері буде 4 колонки, на планшеті 2, на телефоні 1.
+    */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px; /* Відступ до пагінації */
+}
+
+/* Каркас самої картки товару (такий самий, як на головній) */
+.product-card {
+    background-color: rgba(206, 147, 216, 0.3);
+    outline: 1px dashed purple;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 380px;
+}
+
+.product-card figure {
+    flex-grow: 1; /* Фото займає верхню частину */
+    display: grid;
+    place-items: center;
+}
+
+.product-details {
+    margin-top: 20px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* =========================================
+   5. ПАГІНАЦІЯ (Номери сторінок)
+========================================= */
+.pagination {
+    display: flex;
+    justify-content: center; /* Центруємо номери по горизонталі */
+    
+    background-color: rgba(255, 255, 0, 0.2); /* Жовтий */
+    outline: 2px solid #fbc02d;
+    padding: 20px;
+}
+
+.pagination-list {
+    display: flex;
+    gap: 15px;
+}
+
+.pagination-list a {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+}
+
+.pagination-list a.active {
+    background: #f0f0f0; /* Виділяємо поточну сторінку */
+}
+
+/* =========================================
+   АДАПТИВНІСТЬ
+========================================= */
+@media (max-width: 1024px) {
+    .filters-row {
+        flex-direction: column; /* На планшетах фільтри і сортування стають одне під одним */
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-wrap: wrap; /* Кнопки фільтрів переносяться на новий рядок, якщо не влазять */
+    }
+}

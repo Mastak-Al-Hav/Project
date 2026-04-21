@@ -1,0 +1,223 @@
+/* =========================================
+   1. СКИДАННЯ
+========================================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+ul { list-style: none; }
+fieldset { border: none; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
+.container { max-width: 1350px; margin: 0 auto; padding: 40px 20px; }
+
+/* =========================================
+   2. ЛЕЙАУТ СТОРІНКИ
+========================================= */
+.checkout-page {
+    background-color: #f8f9fa;
+    font-family: sans-serif;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.checkout-grid {
+    /* Головна сітка: Ліва колонка ширша за праву (приблизно 55% на 45%) */
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: start; /* Колонки не розтягуються по висоті одна одної */
+}
+
+/* Загальний стиль для великих блоків-контейнерів з макету */
+.checkout-left-column, .checkout-right-column {
+    background-color: #F0EEEE; /* Фон з макету */
+    border: 1px solid #A24E06; /* Рамка з макету */
+    border-radius: 8px;
+    padding: 40px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Відстань між секціями всередині колонок */
+}
+
+/* =========================================
+   3. ЛІВА КОЛОНКА (Товари та Історія)
+========================================= */
+.section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #A24E06;
+    padding-bottom: 10px;
+}
+
+/* Кошик */
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #D9D9D9; /* Сірий фон картки товару */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Історія (Таблиця) */
+.history-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.history-filters button {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Щоб таблиця не ламала сітку на телефонах */
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse; /* Прибирає подвійні рамки */
+    text-align: left;
+}
+
+.history-table th, .history-table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   4. ПРАВА КОЛОНКА (Summary та Форми)
+========================================= */
+
+/* Summary */
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-row, .summary-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-total {
+    font-weight: bold;
+    border-top: 1px solid #A24E06;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Блоки Use Points / Promo */
+.points-promo-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-with-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.input-with-btn input {
+    width: 100px;
+    padding: 5px;
+}
+
+/* Чекаут Форма */
+fieldset {
+    border: 1px solid #A24E06;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+legend {
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.card-extra-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-submit-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn-place-order {
+    padding: 12px 24px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* =========================================
+   5. АДАПТИВНІСТЬ
+========================================= */
+@media (max-width: 1024px) {
+    .checkout-grid {
+        grid-template-columns: 1fr; /* Колонки стають одна під одною */
+    }
+}
+
+@media (max-width: 600px) {
+    .checkout-left-column, .checkout-right-column {
+        padding: 20px; /* Менше простору на телефонах */
+    }
+    
+    .action-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
