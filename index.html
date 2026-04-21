@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Origin — curated coffees, rare teas and crafted experiences in Kyiv. Master the art of cold brews and shop our premium selection.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://origin-coffee.com/">
+    <meta property="og:title" content="Origin | Curated Coffees, Teas & Syrups">
+    <meta property="og:description" content="Origin — curated coffees, rare teas and crafted experiences in Kyiv. Master the art of cold brews and shop our premium selection.">
+    <meta property="og:image" content="https://origin-coffee.com/img/social-preview.jpg">
+
+    <title>Origin | Curated Coffees, Teas & Syrups</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#main" class="sr-only focusable">Skip to main content</a>
+
+    <header class="site-header container">
+        <a href="/" class="logo" aria-label="Origin Home">
+            Origin <img src="img/logo-icon.svg" alt="" aria-hidden="true">
+        </a>
+        
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+        
+        <section class="header-actions" aria-label="User actions">
+            <button aria-label="Open Cart"><img src="img/icon-bag.svg" alt=""></button>
+            <button aria-label="User Profile"><div class="icon-user-circle"></div></button>
+        </section>
+    </header>
+
+    <main>
+        <section class="section-workshop" id="main" aria-labelledby="hero-title">
+            
+            <figure class="hero-visual">
+                <picture>
+                    <source srcset="img/hero-pouring.avif" type="image/avif">
+                    <source srcset="img/hero-pouring.webp" type="image/webp">
+                    <img src="img/hero-pouring.jpg" alt="Bartender pouring cold brew over ice" fetchpriority="high">
+                </picture>
+                <figcaption>CHLOE - GLASS PHOTOGRAPHY</figcaption>
+            </figure>
+            
+            <div class="hero-content"> 
+                <header>
+                    <p class="meta-tag">WORKSHOP / SUMMER <time datetime="2026">26</time> / KYIV</p>
+                    <h1 id="hero-title">Craft Your Signature Summer</h1>
+                    <p>Master the art of cold brews, artisanal lemonades, and iced botanical teas. An exclusive tasting & learning session for the curious.</p>
+                </header>
+                
+                <div class="hero-grid"> 
+                    <section class="takeaways" aria-labelledby="takeaways-title">
+                        <picture>
+                            <source srcset="img/gin-board.avif" type="image/avif">
+                            <source srcset="img/gin-board.webp" type="image/webp">
+                            <img src="img/gin-board.jpg" alt="Botanical ingredients" loading="lazy">
+                        </picture>
+                        <h2 id="takeaways-title" class="sr-only">Takeaways</h2> 
+                        <p><strong>Takeaways:</strong></p>
+                        <ul>
+                            <li>Tasting of 6 unique summer drinks.</li>
+                            <li>A takeaway guide with all the recipes.</li>
+                            <li>A small gift set (e.g., a sampler of syrup).</li>
+                            <li>10% discount on all Origin products.</li>
+                        </ul>
+                        <div class="actions">
+                            <a href="#register" class="btn btn-primary">SECURE YOUR SPOT NOW</a>
+                            <p class="urgency" role="alert">Only 5 spots left!</p>
+                            <a href="#all" class="btn btn-outline">VIEW ALL</a>
+                        </div>
+                    </section>
+                    
+                    <aside class="host-info">
+                        <figure>
+                            <picture>
+                                <source srcset="img/james-hoffmann.avif" type="image/avif">
+                                <source srcset="img/james-hoffmann.webp" type="image/webp">
+                                <img src="img/james-hoffmann.jpg" alt="James Hoffmann tasting coffee" loading="lazy">
+                            </picture>
+                            <figcaption>
+                                <h2>Hosted by James Hoffmann</h2>
+                                <p>World Barista Champion & Sensory Expert</p>
+                            </figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-essence container" id="about" aria-labelledby="about-title">
+            <header class="essence-header">
+                <p class="meta-tag">OUR ESSENCE — KYIV BASED</p>
+                <h2 id="about-title">Crafting the Culture of Taste</h2>
+                <p>Origin is more than a supplier. We are curators of fine flavors...</p>
+                <span class="decorative-circle" aria-hidden="true"></span>
+            </header>
+            
+            <div class="essence-grid">
+                <article class="essence-card">
+                    <h3>Steep with Peace</h3>
+                    <p>Discover our collection of high-altitude whole-leaf teas...</p>
+                </article>
+                <article class="essence-card">
+                    <h3>Brew with Nature</h3>
+                    <p>Our artisanal syrups are crafted from real berries...</p>
+                </article>
+                <article class="essence-card">
+                    <h3>Roast with Soul</h3>
+                    <p>Specialty coffee sourced directly from farmers...</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-bestsellers container" id="catalog" aria-labelledby="catalog-title">
+            <header class="bestsellers-header">
+                <h2 id="catalog-title">Our bestsellers:</h2>
+                <nav aria-label="Product categories" class="filters">
+                    <button aria-current="page">Specialty Coffee</button>
+                    <button>Craft Syrups</button>
+                    <button>Premium Tea</button>
+                </nav>
+            </header>
+            
+            <div class="products-grid">
+                
+                <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                    <figure>
+                        <picture>
+                            <source srcset="img/brazil-santos.avif" type="image/avif">
+                            <source srcset="img/brazil-santos.webp" type="image/webp">
+                            <img itemprop="image" src="img/brazil-santos.png" alt="Coffee bag Brazil Santos" loading="lazy">
+                        </picture>
+                    </figure>
+                    <div class="product-details">
+                        <h3 itemprop="name">Brazil Santos</h3>
+                        <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                            <li>Caramel</li><li>Hazelnut</li><li>Cocoa butter</li>
+                        </ul>
+                        <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="USD" />
+                            <link itemprop="availability" href="https://schema.org/InStock" />
+                            
+                            <data itemprop="price" value="18.99" class="price">18.99$</data>
+                            <button aria-label="Add Brazil Santos to cart"><img src="img/icon-cart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                    <figure>
+                        <picture>
+                            <source srcset="img/ethiopia-yirgacheffe.avif" type="image/avif">
+                            <source srcset="img/ethiopia-yirgacheffe.webp" type="image/webp">
+                            <img itemprop="image" src="img/ethiopia-yirgacheffe.png" alt="Coffee bag Ethiopia Yirgacheffe" loading="lazy">
+                        </picture>
+                    </figure>
+                    <div class="product-details">
+                        <h3 itemprop="name">Ethiopia Yirgacheffe</h3>
+                        <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                            <li>Floral</li><li>Citrus</li><li>Tea leaves</li>
+                        </ul>
+                        <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="USD" />
+                            <link itemprop="availability" href="https://schema.org/InStock" />
+                            
+                            <data itemprop="price" value="19.99" class="price">19.99$</data>
+                            <button aria-label="Add Ethiopia Yirgacheffe to cart"><img src="img/icon-cart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                    <figure>
+                        <picture>
+                            <source srcset="img/guatemala-antigua.avif" type="image/avif">
+                            <source srcset="img/guatemala-antigua.webp" type="image/webp">
+                            <img itemprop="image" src="img/guatemala-antigua.png" alt="Coffee bag Guatemala Antigua" loading="lazy">
+                        </picture>
+                    </figure>
+                    <div class="product-details">
+                        <h3 itemprop="name">Guatemala Antigua</h3>
+                        <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                            <li>Smoke</li><li>Spice</li><li>Dark chocolate</li>
+                        </ul>
+                        <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="USD" />
+                            <link itemprop="availability" href="https://schema.org/InStock" />
+                            
+                            <data itemprop="price" value="17.99" class="price">17.99$</data>
+                            <button aria-label="Add Guatemala Antigua to cart"><img src="img/icon-cart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" itemscope itemtype="https://schema.org/Product">
+                    <figure>
+                        <picture>
+                            <source srcset="img/brazil-mogiana.avif" type="image/avif">
+                            <source srcset="img/brazil-mogiana.webp" type="image/webp">
+                            <img itemprop="image" src="img/brazil-mogiana.png" alt="Coffee bag Brazil Mogiana" loading="lazy">
+                        </picture>
+                    </figure>
+                    <div class="product-details">
+                        <h3 itemprop="name">Brazil Mogiana</h3>
+                        <ul class="product-notes" aria-label="Tasting notes" itemprop="description">
+                            <li>Almonds</li><li>Dried apricots</li><li>Cane sugar</li>
+                        </ul>
+                        <div class="product-bottom" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="USD" />
+                            <link itemprop="availability" href="https://schema.org/InStock" />
+                            
+                            <data itemprop="price" value="17.99" class="price">17.99$</data>
+                            <button aria-label="Add Brazil Mogiana to cart"><img src="img/icon-cart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="bestsellers-bottom">
+                <button class="btn-outline">VIEW ALL</button>
+            </div>
+        </section>
+
+        <section class="section-consultation container" aria-labelledby="form-title">
+            <div class="form-wrapper">
+                <header>
+                    <h2 id="form-title">Get product consultation</h2>
+                    <p>Leave a short request and we’ll curate a lot that fits your taste.</p>
+                </header>
+                
+                <form action="#" method="POST" class="consultation-form">
+                    <fieldset class="form-inputs-left">
+                        <legend class="sr-only">Contact Details</legend>
+                        <p class="input-row">
+                            <label for="userName">Name:</label>
+                            <input type="text" id="userName" name="userName" required autocomplete="name">
+                        </p>
+                        <p class="input-row">
+                            <label for="userPhone">Phone:</label>
+                            <input type="tel" id="userPhone" name="userPhone" required autocomplete="tel">
+                        </p>
+                        <p class="input-row">
+                            <label for="userOrg">Organization:</label>
+                            <input type="text" id="userOrg" name="userOrg" autocomplete="organization">
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset class="form-inputs-right">
+                        <legend class="sr-only">Request Details</legend>
+                        <p class="textarea-box">
+                            <label for="userTopic">Topic:</label>
+                            <textarea id="userTopic" name="userTopic" rows="6" required></textarea>
+                        </p>
+                    </fieldset>
+                    
+                    <footer class="form-footer">
+                        <p class="checkbox-wrapper">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <label for="agreement">I agree to be contacted for consultation.</label>
+                        </p>
+                        <button type="submit" class="btn-outline">SEND REQUEST</button>
+                    </footer>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-grid container">
+            <section class="brand">
+                <h2>Origin</h2>
+                <p>Curated coffees, rare teas and crafted experiences...</p>
+                <small class="copyright">&copy; 2026 ORIGIN. All rights reserved.</small>
+            </section>
+            
+            <section class="team" aria-labelledby="team-title">
+                <h3 id="team-title">Development team:</h3>
+                <ul>
+                    <li>Gavrylenko Oleksiy</li>
+                    <li>Gromov Andriy</li>
+                    <li>Seniv Kateryna</li>
+                </ul>
+            </section>
+            
+            <section class="support" aria-labelledby="support-title">
+                <h3 id="support-title">Support & Info</h3>
+                <address>
+                    <p>Ivano-Frankivsk, Ukraine</p>
+                    <p><a href="tel:+380000000000">+380 (XX) XXX XX XX</a></p>
+                </address>
+                <a href="#privacy">Privacy policy</a>
+            </section>
+        </div>
+    </footer>
+
+</body>
+</html>
